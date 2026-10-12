@@ -1,0 +1,25 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# JavaScript
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Build and tool output
+build/
+dist/
+.vite/
+.DS_Store
+Thumbs.db
