@@ -47,8 +47,10 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Configure SPA route fallback
-        run: cp frontend/dist/index.html frontend/dist/404.html
+      - name: Configure SPA route fallback and disable Jekyll
+        run: |
+          cp frontend/dist/index.html frontend/dist/404.html
+          touch frontend/dist/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
