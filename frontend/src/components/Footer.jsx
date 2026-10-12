@@ -24,7 +24,7 @@ export default function Footer() {
                 alt="Terraline Infra"
                 className="h-28 w-28 rounded-2xl bg-bg-light p-1.5 object-contain"
                 loading="lazy"
-                src="/terraline-logo.png"
+                src={`${import.meta.env.BASE_URL}terraline-logo.png`}
               />
             </Link>
             <p className="mt-5 font-sans text-sm leading-6 text-bg-light/65">

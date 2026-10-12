@@ -46,7 +46,10 @@ export default function Hero() {
             playsInline
             preload="metadata"
           >
-            <source src="/terraline-hero.mp4" type="video/mp4" />
+            <source
+              src={`${import.meta.env.BASE_URL}terraline-hero.mp4`}
+              type="video/mp4"
+            />
           </video>
         )}
       </div>

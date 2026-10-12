@@ -7,7 +7,7 @@ import SmoothScroll from './components/SmoothScroll.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <SmoothScroll>
         <App />
       </SmoothScroll>

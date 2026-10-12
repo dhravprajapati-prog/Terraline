@@ -80,7 +80,7 @@ export default function Navbar() {
             <img
               alt="Terraline Infra"
               className="h-10 w-10 rounded-full bg-bg-light p-1 object-contain"
-              src="/terraline-symbol.png"
+              src={`${import.meta.env.BASE_URL}terraline-symbol.png`}
             />
             <span className="font-heading text-sm font-bold tracking-tight sm:text-lg">
               Terraline <span className="text-brand-gold">Infra</span>
